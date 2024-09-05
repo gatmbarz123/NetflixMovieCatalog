@@ -40,7 +40,7 @@ pipeline {
             steps {
                 script {
                     def IMAGE_FULL_NAME = "$DOCKER_USERNAME/$IMAGE_BASE_NAME:$IMAGE_TAG"
-                    build job: 'deploy-prod', wait: false, parameters: [
+                    build job: 'deploy-dev', wait: false, parameters: [
                         string(name: 'SERVICE_NAME', value: "Netflix-api"),
                         string(name: 'IMAGE_FULL_NAME_PARAM', value: IMAGE_FULL_NAME)
                     ]
