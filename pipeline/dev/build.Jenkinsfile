@@ -4,7 +4,7 @@ pipeline {
     }
     
     triggers {
-        githubPush() // trigger the pipeline upon push event in GitHub
+        githubPush() // trigger the pipeline upon push event in GitHub HOLOA 
     }
     
     environment {        
